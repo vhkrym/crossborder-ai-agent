@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0,<3.0
+pydantic-settings
+pandas
+openpyxl
+python-multipart
+httpx
+pytest
