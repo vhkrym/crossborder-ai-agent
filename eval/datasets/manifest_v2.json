@@ -1,0 +1,9 @@
+{
+  "version": "supervisor-v2",
+  "cases": 60,
+  "seed": 42,
+  "sha256": "ad129023db612feb01a23c473922545dac044a22a0f3b12381d8d7bd0fcb8b5d",
+  "parent_version": "supervisor-v1",
+  "parent_sha256": "e2e8970bd1e245bf82fcfd431da08f6e2aaeae2b65ba493737481b6ee630375f",
+  "annotation": "User-adopted evaluation rules; not independent third-party human review. Only dual-01 and dual-09 have additional acceptable agent sets."
+}

@@ -7,3 +7,6 @@ openpyxl
 python-multipart
 httpx
 pytest
+langgraph==1.2.10
+langchain-core==1.6.0
+langchain-openai==1.6.0

@@ -6,6 +6,10 @@ from app.db.session import engine
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    from app.services.agent_tasks import AgentTaskService
+    AgentTaskService().recover()
+    from app.services.simulations import SimulationService
+    SimulationService().recover()
     try:
         yield
     finally:

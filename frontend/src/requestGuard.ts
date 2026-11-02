@@ -1,0 +1,2 @@
+export function createRequestGuard(){let version=0;return {begin:()=>++version,current:(token:number)=>token===version,invalidate:()=>{version++}}}
+export async function fetchDecisionBundle<P extends {proposal_id:string;store_id:number},A>(id:string,fetchProposal:(id:string)=>Promise<P>,fetchAudit:(id:string,store:number)=>Promise<A>){const proposal=await fetchProposal(id);const audit=await fetchAudit(proposal.proposal_id,proposal.store_id);return {proposal,audit}}

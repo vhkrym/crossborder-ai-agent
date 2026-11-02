@@ -1,0 +1,60 @@
+{
+  "dataset_version": "supervisor-v2",
+  "dataset_sha256": "ad129023db612feb01a23c473922545dac044a22a0f3b12381d8d7bd0fcb8b5d",
+  "selected_case_ids": [
+    "profit-07",
+    "profit-08",
+    "advertising-06",
+    "advertising-09",
+    "inventory-06",
+    "inventory-10",
+    "dual-01",
+    "dual-02",
+    "dual-05",
+    "dual-07",
+    "dual-09",
+    "dual-12",
+    "triple-05",
+    "triple-08",
+    "unsupported-05"
+  ],
+  "category_distribution": {
+    "single": {
+      "profit": 2,
+      "advertising": 2,
+      "inventory": 2
+    },
+    "dual": {
+      "profit+advertising": 2,
+      "profit+inventory": 2,
+      "advertising+inventory": 2
+    },
+    "triple": 2,
+    "unsupported": 1
+  },
+  "selection_rationale": {
+    "profit-07": "Historical cost evidence boundary; explicit DEMO-005",
+    "profit-08": "Contradictory natural-language quarter; trusted Q1 input",
+    "advertising-06": "Store 2 advertising",
+    "advertising-09": "No impressions; CTR capability boundary",
+    "inventory-06": "Store 2, relative time versus trusted cutoff",
+    "inventory-10": "Explicit safety_days=10",
+    "dual-01": "Predefined acceptable profit-only alternative",
+    "dual-02": "Explicit DEMO-001, profit+advertising",
+    "dual-05": "Profit and stock risk intersection",
+    "dual-07": "Historical cost interpretation boundary and inventory",
+    "dual-09": "Predefined acceptable inventory-only alternative",
+    "dual-12": "Store 2 advertising/inventory intersection requires both tools",
+    "triple-05": "Store 2, three dimensions",
+    "triple-08": "Empty historical range, null/missing-data handling",
+    "unsupported-05": "Actual budget/payment action unsupported, not merely unrelated prose"
+  },
+  "previously_evaluated_case_ids": [
+    "profit-02",
+    "advertising-02",
+    "inventory-02",
+    "triple-01",
+    "unsupported-01"
+  ],
+  "created_at": "2026-10-29T08:13:01.400776+00:00"
+}

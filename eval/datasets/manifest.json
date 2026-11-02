@@ -1,0 +1,7 @@
+{
+  "version": "supervisor-v1",
+  "seed": 42,
+  "cases": 60,
+  "annotation": "Static business-rule labels fixed before live evaluation; assistant-assisted curation, independent human review pending. Scope comes from explicit fields, not natural-language extraction.",
+  "sha256": "e2e8970bd1e245bf82fcfd431da08f6e2aaeae2b65ba493737481b6ee630375f"
+}
